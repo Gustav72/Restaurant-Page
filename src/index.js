@@ -1,1 +1,5 @@
-console.log('barbecue sauce')
+import homie from "./home"
+
+
+
+console.log(homie());
