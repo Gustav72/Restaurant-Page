@@ -1,5 +1,5 @@
 export default function homie() {
-    return 'wazzup homie'
+    return 'what is up? homie'
 }
 
 const container = document.querySelector('.container');
