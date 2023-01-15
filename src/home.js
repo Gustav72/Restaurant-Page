@@ -1,5 +1,4 @@
-export default function homie() {
-    return 'what is up? homie'
-}
+export default function home() {
+    const container = document.querySelector('.container'); 
 
-const container = document.querySelector('.container');
+}
