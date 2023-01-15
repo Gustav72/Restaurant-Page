@@ -14,6 +14,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function home() {
   var container = document.querySelector('.container');
+  var nav = document.createElement('div');
+  nav.setAttribute('id', 'nav-container');
+  container.appendChild(nav);
+  var home = document.createElement('div');
+  var menu = document.createElement('div');
+  var contact = document.createElement('div');
+  home.setAttribute('class', nav);
+  menu.setAttribute('class', nav);
+  contact.setAttribute('class', nav);
+  home.innerText = 'HOME';
+  menu.innerText = 'MENU';
+  contact.innerText = 'CONTACT';
+  nav.appendChild(home);
+  nav.appendChild(menu);
+  nav.appendChild(contact);
 }
 
 /***/ }),
@@ -794,18 +809,17 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./src/home.js");
-/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./normalize.css */ "./src/normalize.css");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _assets_mahmoud_fawzy_YnVaHqgpPLA_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg */ "./src/assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg");
+/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./normalize.css */ "./src/normalize.css");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _assets_mahmoud_fawzy_YnVaHqgpPLA_unsplash_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg */ "./src/assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg");
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home */ "./src/home.js");
 
 
 
 
-console.log((0,_home__WEBPACK_IMPORTED_MODULE_0__["default"])());
-var pookie = _assets_mahmoud_fawzy_YnVaHqgpPLA_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3__;
+(0,_home__WEBPACK_IMPORTED_MODULE_3__["default"])();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle0cb317accb7824f282bc.js.map
+//# sourceMappingURL=bundle3db478dbb68f5da1b3eb.js.map
