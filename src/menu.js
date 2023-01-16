@@ -75,14 +75,14 @@ export default function menu() {
     const text7 = document.createElement('p')
     const text8 = document.createElement('p')
 
-    text1.innerText = 'Mango, cucumber, and avocado topped with spicy crab meat crunch and mango sauce'
-    text2.innerText = 'Lobster, mango, and avocado with mango sauce wrapped with soy bean paper'
+    text1.innerText = 'Mango, cucumber, and avocado topped with spicy crab meat and mango sauce'
+    text2.innerText = 'Lobster, mango, and avocado with mango wrapped with soy bean paper'
     text3.innerText = 'Shrimp tempura, cream cheese, eel, and avocado on top with spicy eel sauce'
-    text4.innerText = 'Spicy tuna, yellow tail, avocado, and crunchy tobiko wrapped in pink soy paper'
-    text5.innerText = 'Deep fried spicy tuna, crunchy onion, avocado, and extra spicy special sauce'
+    text4.innerText = 'Spicy tuna, yellow tail, avocado, and crunchy tobiko wrapped in soy paper'
+    text5.innerText = 'Deep fried spicy tuna, crunchy onion, avocado, and special sauce'
     text6.innerText = 'Lobster, spicy white tuna, and avocado topped with super white tuna flakes'
     text7.innerText = 'Spicy tuna, spicy salmon, spicy yellow tail topped with assorted tobiko'
-    text8.innerText = 'Salmon, tuna, red snapper, crab meat, all deep fried laid over tobiko and scallions'
+    text8.innerText = 'Salmon, tuna, red snapper, crab meat, all deep fried laid over scallions'
 
     card1.appendChild(title1);
     card1.appendChild(text1);
