@@ -2,7 +2,7 @@
 
 Project from [The Odin Project](https://www.theodinproject.com/)
 
-## [Live Demo](https://gustav72.github.io/restaurant-page/)
+## [Live Demo](https://gustav72.github.io/Restaurant-Page/)
 
 ### Technologies Used
 
