@@ -22,7 +22,7 @@ Project from [The Odin Project](https://www.theodinproject.com/)
 
 ### Overview
 
-Welcome to my Library app! Input book data in the form and submit. Every book is made into an object and pushed into an array. The form is validated with JavaScript. Data is showcased in a table through DOM manipulation with JavaScript. Users can change read status by clicking 'yes' or 'no' in the finished column. Users can remove a book from the table by clicking the '✖'. Read status and removal status is updated in objects and the array as the user changes or removes data.
+Welcome to my simple restaurant website! Every page is created with HTML rendered with modular JavaScript functions. Page navigation is achieved with JavaScript DOM manipulation. Webpack is used to bundle all files as well as to implement Babel for JavaScript functionality for older browser versions.
 
 Background Photo by Mahmoud Fawzy on Unsplash
 
