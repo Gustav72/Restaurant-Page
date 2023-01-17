@@ -12,7 +12,7 @@ Project from [The Odin Project](https://www.theodinproject.com/)
 
 <a href="https://www.w3.org/Style/CSS/specs.en.html" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="30" height="30"/> </a>CSS3
 
-<a href="https://webpack.js.org/" target="_blank" rel="noreferrer"> <img src="hhttps://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-plain.svg" alt="webpack" width="30" height="30"/> </a>Webpack
+<a href="https://webpack.js.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-plain.svg" alt="webpack" width="30" height="30"/> </a>Webpack
 
 <a href="https://babeljs.io/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" alt="Babel" width="30" height="30"/> </a>Babel
 
