@@ -1,7 +1,9 @@
 import clock from "./assets/clock.svg"
 import location from "./assets/location.svg"
+import menuPage from './menu'
+import contactPage from './contact'
 
-export default function home() {
+export default function homePage() {
     const container = document.querySelector('#content'); 
 
     const h1 = document.createElement('h1');
@@ -24,6 +26,25 @@ export default function home() {
     home.innerText = 'HOME';
     menu.innerText = 'MENU';
     contact.innerText = 'CONTACT';
+
+    home.addEventListener('click', function() {
+        while (container.firstChild) {
+            container.removeChild(container.lastChild);
+          }
+        homePage();
+    });
+    menu.addEventListener('click', function() {
+        while (container.firstChild) {
+            container.removeChild(container.lastChild);
+          }
+        menuPage();
+    });
+    contact.addEventListener('click', function() {
+        while (container.firstChild) {
+            container.removeChild(container.lastChild);
+          }
+        contactPage();
+    });
 
     nav.appendChild(home);
     nav.appendChild(menu);
@@ -70,6 +91,13 @@ export default function home() {
     const homeButton = document.createElement('button');
     homeButton.setAttribute('id', 'home-button');
     homeButton.innerText = 'View Menu'
+
+    homeButton.addEventListener('click', function() {
+        while (container.firstChild) {
+            container.removeChild(container.lastChild);
+          }
+        menuPage();
+      });
 
     container.appendChild(homeButton);
 }

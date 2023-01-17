@@ -1,7 +1,6 @@
 import './normalize.css'
 import './style.css'
-import home from "./home"
-import menu from "./menu"
+import homePage from './home'
 
 
-menu();
+homePage();

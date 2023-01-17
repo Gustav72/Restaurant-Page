@@ -2,6 +2,108 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ contact)
+/* harmony export */ });
+/* harmony import */ var _assets_clock_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/clock.svg */ "./src/assets/clock.svg");
+/* harmony import */ var _assets_location_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/location.svg */ "./src/assets/location.svg");
+/* harmony import */ var _assets_phone_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/phone.svg */ "./src/assets/phone.svg");
+/* harmony import */ var _assets_email_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/email.svg */ "./src/assets/email.svg");
+
+
+
+
+function contact() {
+  var container = document.querySelector('#content');
+  var h1 = document.createElement('h1');
+  h1.innerText = 'KINRO SUSHI';
+  container.appendChild(h1);
+  var nav = document.createElement('div');
+  nav.setAttribute('id', 'nav-container');
+  container.appendChild(nav);
+  var home = document.createElement('div');
+  var menu = document.createElement('div');
+  var contact = document.createElement('div');
+  contact.style.textDecoration = 'underline salmon';
+  home.setAttribute('id', 'home');
+  menu.setAttribute('id', 'menu');
+  contact.setAttribute('id', 'contact');
+  home.innerText = 'HOME';
+  menu.innerText = 'MENU';
+  contact.innerText = 'CONTACT';
+  nav.appendChild(home);
+  nav.appendChild(menu);
+  nav.appendChild(contact);
+  var contactContainer = document.createElement('div');
+  contactContainer.setAttribute('id', 'contact-container');
+  container.appendChild(contactContainer);
+  var card1 = document.createElement('div');
+  var card2 = document.createElement('div');
+  var card3 = document.createElement('div');
+  var card4 = document.createElement('div');
+  contactContainer.appendChild(card1);
+  contactContainer.appendChild(card2);
+  contactContainer.appendChild(card3);
+  contactContainer.appendChild(card4);
+  var locationImg = document.createElement('img');
+  var hoursImg = document.createElement('img');
+  var phoneImg = document.createElement('img');
+  var emailImg = document.createElement('img');
+  locationImg.src = _assets_location_svg__WEBPACK_IMPORTED_MODULE_1__;
+  hoursImg.src = _assets_clock_svg__WEBPACK_IMPORTED_MODULE_0__;
+  phoneImg.src = _assets_phone_svg__WEBPACK_IMPORTED_MODULE_2__;
+  emailImg.src = _assets_email_svg__WEBPACK_IMPORTED_MODULE_3__;
+  card1.appendChild(locationImg);
+  card2.appendChild(hoursImg);
+  card3.appendChild(phoneImg);
+  card4.appendChild(emailImg);
+  var locationInfo1 = document.createElement('div');
+  var locationInfo2 = document.createElement('div');
+  var hoursInfo1 = document.createElement('div');
+  var hoursInfo2 = document.createElement('div');
+  var phoneInfo = document.createElement('div');
+  var emailInfo = document.createElement('div');
+  locationInfo1.innerText = '456 Beacon Street';
+  locationInfo2.innerText = 'Boston, MA 02108';
+  hoursInfo1.innerText = 'Mon-Thur: 11am-9pm';
+  hoursInfo2.innerText = 'Fri-Sun: 11am-12am';
+  phoneInfo.innerText = '(617)-222-5555';
+  emailInfo.innerText = 'contact@kinrosushi.com';
+  card1.appendChild(locationInfo1);
+  card1.appendChild(locationInfo2);
+  card2.appendChild(hoursInfo1);
+  card2.appendChild(hoursInfo2);
+  card3.appendChild(phoneInfo);
+  card4.appendChild(emailInfo);
+  function initMap() {
+    // The location of Uluru
+    var uluru = {
+      lat: -25.344,
+      lng: 131.031
+    };
+    // The map, centered at Uluru
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: uluru
+    });
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+  window.initMap = initMap;
+}
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -12,23 +114,166 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ home)
 /* harmony export */ });
+/* harmony import */ var _assets_clock_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/clock.svg */ "./src/assets/clock.svg");
+/* harmony import */ var _assets_location_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/location.svg */ "./src/assets/location.svg");
+
+
 function home() {
-  var container = document.querySelector('.container');
+  var container = document.querySelector('#content');
+  var h1 = document.createElement('h1');
+  h1.innerText = 'KINRO SUSHI';
+  container.appendChild(h1);
   var nav = document.createElement('div');
   nav.setAttribute('id', 'nav-container');
   container.appendChild(nav);
   var home = document.createElement('div');
   var menu = document.createElement('div');
   var contact = document.createElement('div');
-  home.setAttribute('class', nav);
-  menu.setAttribute('class', nav);
-  contact.setAttribute('class', nav);
+  home.style.textDecoration = 'underline salmon';
+  home.setAttribute('id', 'home');
+  menu.setAttribute('id', 'menu');
+  contact.setAttribute('id', 'contact');
   home.innerText = 'HOME';
   menu.innerText = 'MENU';
   contact.innerText = 'CONTACT';
   nav.appendChild(home);
   nav.appendChild(menu);
   nav.appendChild(contact);
+  var greatest = document.createElement('div');
+  greatest.innerText = "WORLD'S GREATEST SUSHI";
+  greatest.setAttribute('id', 'greatest');
+  container.appendChild(greatest);
+  var homeInfo = document.createElement('div');
+  homeInfo.setAttribute('id', 'home-info');
+  container.appendChild(homeInfo);
+  var homeLeft = document.createElement('div');
+  var homeRight = document.createElement('div');
+  homeInfo.appendChild(homeLeft);
+  homeInfo.appendChild(homeRight);
+  var homeClock = document.createElement('img');
+  var homeLocation = document.createElement('img');
+  homeClock.src = _assets_clock_svg__WEBPACK_IMPORTED_MODULE_0__;
+  homeLocation.src = _assets_location_svg__WEBPACK_IMPORTED_MODULE_1__;
+  var firstLeft = document.createElement('div');
+  var secondLeft = document.createElement('div');
+  var firstRight = document.createElement('div');
+  var secondRight = document.createElement('div');
+  firstLeft.innerText = 'Mon-Thur: 11am-9pm';
+  secondLeft.innerText = 'Fri-Sun: 11am-12am';
+  firstRight.innerText = '857 Beacon Street';
+  secondRight.innerText = 'Boston, MA 02108';
+  homeLeft.appendChild(homeClock);
+  homeLeft.appendChild(firstLeft);
+  homeLeft.appendChild(secondLeft);
+  homeRight.appendChild(homeLocation);
+  homeRight.appendChild(firstRight);
+  homeRight.appendChild(secondRight);
+  var homeButton = document.createElement('button');
+  homeButton.setAttribute('id', 'home-button');
+  homeButton.innerText = 'View Menu';
+  container.appendChild(homeButton);
+}
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ menu)
+/* harmony export */ });
+function menu() {
+  var container = document.querySelector('#content');
+  var h1 = document.createElement('h1');
+  h1.innerText = 'KINRO SUSHI';
+  container.appendChild(h1);
+  var nav = document.createElement('div');
+  nav.setAttribute('id', 'nav-container');
+  container.appendChild(nav);
+  var home = document.createElement('div');
+  var menu = document.createElement('div');
+  var contact = document.createElement('div');
+  menu.style.textDecoration = 'underline salmon';
+  home.setAttribute('id', 'home');
+  menu.setAttribute('id', 'menu');
+  contact.setAttribute('id', 'contact');
+  home.innerText = 'HOME';
+  menu.innerText = 'MENU';
+  contact.innerText = 'CONTACT';
+  nav.appendChild(home);
+  nav.appendChild(menu);
+  nav.appendChild(contact);
+  var menuContainer = document.createElement('div');
+  menuContainer.setAttribute('id', 'menu-container');
+  container.appendChild(menuContainer);
+  var card1 = document.createElement('div');
+  var card2 = document.createElement('div');
+  var card3 = document.createElement('div');
+  var card4 = document.createElement('div');
+  var card5 = document.createElement('div');
+  var card6 = document.createElement('div');
+  var card7 = document.createElement('div');
+  var card8 = document.createElement('div');
+  menuContainer.appendChild(card1);
+  menuContainer.appendChild(card2);
+  menuContainer.appendChild(card3);
+  menuContainer.appendChild(card4);
+  menuContainer.appendChild(card5);
+  menuContainer.appendChild(card6);
+  menuContainer.appendChild(card7);
+  menuContainer.appendChild(card8);
+  var title1 = document.createElement('h3');
+  var title2 = document.createElement('h3');
+  var title3 = document.createElement('h3');
+  var title4 = document.createElement('h3');
+  var title5 = document.createElement('h3');
+  var title6 = document.createElement('h3');
+  var title7 = document.createElement('h3');
+  var title8 = document.createElement('h3');
+  title1.innerText = 'Sunshine Roll $9';
+  title2.innerText = 'Butterfly Roll $9';
+  title3.innerText = 'Cowboy Roll $10';
+  title4.innerText = 'Billerica Roll $9';
+  title5.innerText = 'Volcano Roll $9';
+  title6.innerText = 'Winter Roll $13';
+  title7.innerText = 'Patriot Roll $11';
+  title8.innerText = 'Crazy Roll $11';
+  var text1 = document.createElement('p');
+  var text2 = document.createElement('p');
+  var text3 = document.createElement('p');
+  var text4 = document.createElement('p');
+  var text5 = document.createElement('p');
+  var text6 = document.createElement('p');
+  var text7 = document.createElement('p');
+  var text8 = document.createElement('p');
+  text1.innerText = 'Mango, cucumber, and avocado topped with spicy crab meat and mango sauce';
+  text2.innerText = 'Lobster, mango, and avocado with mango wrapped with soy bean paper';
+  text3.innerText = 'Shrimp tempura, cream cheese, eel, and avocado on top with spicy eel sauce';
+  text4.innerText = 'Spicy tuna, yellow tail, avocado, and crunchy tobiko wrapped in soy paper';
+  text5.innerText = 'Deep fried spicy tuna, crunchy onion, avocado, and special sauce';
+  text6.innerText = 'Lobster, spicy white tuna, and avocado topped with super white tuna flakes';
+  text7.innerText = 'Spicy tuna, spicy salmon, spicy yellow tail topped with assorted tobiko';
+  text8.innerText = 'Salmon, tuna, red snapper, crab meat, all deep fried laid over scallions';
+  card1.appendChild(title1);
+  card1.appendChild(text1);
+  card2.appendChild(title2);
+  card2.appendChild(text2);
+  card3.appendChild(title3);
+  card3.appendChild(text3);
+  card4.appendChild(title4);
+  card4.appendChild(text4);
+  card5.appendChild(title5);
+  card5.appendChild(text5);
+  card6.appendChild(title6);
+  card6.appendChild(text6);
+  card7.appendChild(title7);
+  card7.appendChild(text7);
+  card8.appendChild(title8);
+  card8.appendChild(text8);
 }
 
 /***/ }),
@@ -81,9 +326,10 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg */ "./src/assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ")\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI;AACJ","sourcesContent":["body {\n    background-image: url(./assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg)\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    color: white;\n    font-family: 'Nanum Brush Script', cursive;\n    display: flex;\n    justify-content: center;\n}\n\n#nav-container > div:hover {\n    color: #59a523;\n}\n\nh1 {\n    font-size: 8rem;\n    text-align: center;\n    margin-top: 10px;\n    margin-bottom: 0px;\n}\n\nimg {\n    height: 50px;\n}\n\nh3 {\n    margin-bottom: 0;\n}\n\np {\n    margin: 0;\n}\n\n#content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n#greatest {\n    font-size: 6rem;\n    background-color: rgb(0, 0, 0, .6);\n    margin-top: 50px;\n}\n\n#nav-container {\n    font-size: 4rem;\n    display: flex;\n    gap: 60px;\n    margin-top: 50px;\n    background-color: rgb(0, 0, 0, .6);\n}\n\n\n#home-info {\n    display: flex;  \n    justify-content: space-between;\n    font-size:2.5rem;\n    text-align: center;\n    margin-top: 125px;\n    width: 750px;\n}\n\n#home-info > div > div {\n    background-color: rgb(0, 0, 0, .6);\n    padding-left: 10px;\n    padding-right: 10px;\n    width: 305px;\n}\n\n#home-button {\n    background-color: #59a523;\n    height: 50px;\n    font-size: 3rem;\n    margin-top: 100px;\n    padding-bottom: 50px;\n    font-weight: 600;\n}\n\n#menu-container {\n    background-color: rgb(0, 0, 0, .6);\n    padding: 50px;\n    padding-right: 35px;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    width: 800px;\n    font-size: 1.8rem;\n    row-gap: 0px;\n    column-gap: 50px;\n\n}\n\n#menu-container > div {\n    width: 370px;\n}\n\n#contact-container {\n    background-color: rgb(0, 0, 0, .6);\n    height: 500px;\n    width: 550px;\n    margin-top: 50px;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;IACI,yDAAsE;IACtE,YAAY;IACZ,0CAA0C;IAC1C,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,eAAe;IACf,kBAAkB;IAClB,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,SAAS;AACb;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,eAAe;IACf,kCAAkC;IAClC,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,aAAa;IACb,SAAS;IACT,gBAAgB;IAChB,kCAAkC;AACtC;;;AAGA;IACI,aAAa;IACb,8BAA8B;IAC9B,gBAAgB;IAChB,kBAAkB;IAClB,iBAAiB;IACjB,YAAY;AAChB;;AAEA;IACI,kCAAkC;IAClC,kBAAkB;IAClB,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,yBAAyB;IACzB,YAAY;IACZ,eAAe;IACf,iBAAiB;IACjB,oBAAoB;IACpB,gBAAgB;AACpB;;AAEA;IACI,kCAAkC;IAClC,aAAa;IACb,mBAAmB;IACnB,aAAa;IACb,8BAA8B;IAC9B,YAAY;IACZ,iBAAiB;IACjB,YAAY;IACZ,gBAAgB;;AAEpB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,kCAAkC;IAClC,aAAa;IACb,YAAY;IACZ,gBAAgB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');\n\nbody {\n    background-image: url(./assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg);\n    color: white;\n    font-family: 'Nanum Brush Script', cursive;\n    display: flex;\n    justify-content: center;\n}\n\n#nav-container > div:hover {\n    color: #59a523;\n}\n\nh1 {\n    font-size: 8rem;\n    text-align: center;\n    margin-top: 10px;\n    margin-bottom: 0px;\n}\n\nimg {\n    height: 50px;\n}\n\nh3 {\n    margin-bottom: 0;\n}\n\np {\n    margin: 0;\n}\n\n#content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n#greatest {\n    font-size: 6rem;\n    background-color: rgb(0, 0, 0, .6);\n    margin-top: 50px;\n}\n\n#nav-container {\n    font-size: 4rem;\n    display: flex;\n    gap: 60px;\n    margin-top: 50px;\n    background-color: rgb(0, 0, 0, .6);\n}\n\n\n#home-info {\n    display: flex;  \n    justify-content: space-between;\n    font-size:2.5rem;\n    text-align: center;\n    margin-top: 125px;\n    width: 750px;\n}\n\n#home-info > div > div {\n    background-color: rgb(0, 0, 0, .6);\n    padding-left: 10px;\n    padding-right: 10px;\n    width: 305px;\n}\n\n#home-button {\n    background-color: #59a523;\n    height: 50px;\n    font-size: 3rem;\n    margin-top: 100px;\n    padding-bottom: 50px;\n    font-weight: 600;\n}\n\n#menu-container {\n    background-color: rgb(0, 0, 0, .6);\n    padding: 50px;\n    padding-right: 35px;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    width: 800px;\n    font-size: 1.8rem;\n    row-gap: 0px;\n    column-gap: 50px;\n\n}\n\n#menu-container > div {\n    width: 370px;\n}\n\n#contact-container {\n    background-color: rgb(0, 0, 0, .6);\n    height: 500px;\n    width: 550px;\n    margin-top: 50px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -658,6 +904,36 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/assets/clock.svg":
+/*!******************************!*\
+  !*** ./src/assets/clock.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "clock.svg";
+
+/***/ }),
+
+/***/ "./src/assets/email.svg":
+/*!******************************!*\
+  !*** ./src/assets/email.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "email.svg";
+
+/***/ }),
+
+/***/ "./src/assets/location.svg":
+/*!*********************************!*\
+  !*** ./src/assets/location.svg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "location.svg";
+
+/***/ }),
+
 /***/ "./src/assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg":
 /*!***********************************************************!*\
   !*** ./src/assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg ***!
@@ -665,6 +941,16 @@ module.exports = styleTagTransform;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/phone.svg":
+/*!******************************!*\
+  !*** ./src/assets/phone.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "phone.svg";
 
 /***/ })
 
@@ -811,15 +1097,17 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./normalize.css */ "./src/normalize.css");
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _assets_mahmoud_fawzy_YnVaHqgpPLA_unsplash_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg */ "./src/assets/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg");
-/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home */ "./src/home.js");
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ "./src/home.js");
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
+/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contact */ "./src/contact.js");
 
 
 
 
-(0,_home__WEBPACK_IMPORTED_MODULE_3__["default"])();
+
+(0,_contact__WEBPACK_IMPORTED_MODULE_4__["default"])();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle3db478dbb68f5da1b3eb.js.map
+//# sourceMappingURL=bundle2c6b2a4faa6c02966cc9.js.map

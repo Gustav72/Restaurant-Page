@@ -1,4 +1,7 @@
-export default function menu() {
+import homePage from './home'
+import contactPage from './contact'
+
+export default function menuPage() {
     const container = document.querySelector('#content'); 
 
     const h1 = document.createElement('h1');
@@ -21,6 +24,26 @@ export default function menu() {
     home.innerText = 'HOME';
     menu.innerText = 'MENU';
     contact.innerText = 'CONTACT';
+
+
+    home.addEventListener('click', function() {
+        while (container.firstChild) {
+            container.removeChild(container.lastChild);
+          }
+        homePage();
+    });
+    menu.addEventListener('click', function() {
+        while (container.firstChild) {
+            container.removeChild(container.lastChild);
+          }
+        menuPage();
+    });
+    contact.addEventListener('click', function() {
+        while (container.firstChild) {
+            container.removeChild(container.lastChild);
+          }
+        contactPage();
+    });
 
     nav.appendChild(home);
     nav.appendChild(menu);
