@@ -16,6 +16,8 @@ Project from [The Odin Project](https://www.theodinproject.com/)
 
 <a href="https://babeljs.io/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" alt="Babel" width="30" height="30"/> </a>Babel
 
+<a href="https://www.npmjs.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="node package manager" width="30" height="30"/> </a>Node Package Manager
+
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" width="30" height="30"/> </a>Git
 
 ### Overview
